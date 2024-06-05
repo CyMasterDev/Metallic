@@ -11,7 +11,8 @@
     "dev": "npm run test && vite",
     "build": "npm run test && tsc && vite build",
     "preview": "npm run test && vite preview",
-    "test": "ava"
+    "test": "ava",
+    "postbuild": "npm run build && mkdir -p dist && cp -r build/* dist/"
   },
   "dependencies": {
     "@ekwoka/preact-global-state": "^2.0.0",
@@ -53,10 +54,6 @@
   },
   "engines": {
     "npm": ">=10.2.4",
-  "node": ">=20.11.1"
-
-  "scripts": {
-  "build": "npm run build && mkdir dist && cp -r build/* dist/"
-}  
+    "node": ">=20.11.1"
   }
 }
