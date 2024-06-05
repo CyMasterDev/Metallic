@@ -12,7 +12,7 @@
     "build": "npm run test && tsc && vite build",
     "preview": "npm run test && vite preview",
     "test": "ava",
-    "postbuild": "npm run build && mkdir -p dist && cp -r build/* dist/"
+    "postbuild": "mkdir -p dist && cp -r build/* dist/"
   },
   "dependencies": {
     "@ekwoka/preact-global-state": "^2.0.0",
