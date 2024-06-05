@@ -53,6 +53,10 @@
   },
   "engines": {
     "npm": ">=10.2.4",
-    "node": ">=20.11.1"
+  "node": ">=20.11.1"
+
+  "scripts": {
+  "build": "npm run build && mkdir dist && cp -r build/* dist/"
+}  
   }
 }
